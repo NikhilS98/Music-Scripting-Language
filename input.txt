@@ -1,0 +1,41 @@
+begin;
+
+progression p1 = "C Dmaj f" + "d" + "G";
+progression p2 = "Dmaj";
+
+progression p2 = "";
+
+instrument i1 = drum;
+instrument i2 = guitar + "rtrt";
+
+//instrument i4 = ksdlf;
+
+//progression p2 = p1 + "Amin";
+
+play "we" with i1 3 times;
+
+//hello
+
+/*
+this is a 
+comment
+*/
+
+play p1 with i2 5 times;
+
+/*
+instrument i2 = "Hello"
+*/
+
+instrument i4 = piano;
+
+//progression i4 = "x";
+
+at 3 [
+	play p1 with i1 3 times;
+	play p2 with drum 4 times;
+	play p2 with i1;
+	//instrument i5 = piano;
+]
+
+end;

@@ -1,0 +1,51 @@
+t0 = "C Dmaj f" + "d"
+t1 = t0 + "G"
+p1 = t1
+
+
+t2 = "C"
+p2 = t2
+
+
+t3 = "kjkj"
+i1 = t3
+
+
+t4 = guitar
+i2 = t4
+
+
+i = 0
+L0:
+	t5 = play(p1)
+	t6 = t5 + with(i1)
+	i = i + 1
+if i < 3 goto L0
+
+
+i = 0
+L1:
+	t7 = play(p1)
+	t8 = t7 + with(i2)
+	i = i + 1
+if i < 5 goto L1
+
+
+t9 = piano
+i4 = t9
+
+
+i = 0
+L2:
+	t10 = play(p1) + at(3)
+	t11 = t10 + with(i1)
+	i = i + 1
+if i < 3 goto L2
+i = 0
+L3:
+	t12 = play(p2) + at(3)
+	t13 = t12 + with(drum)
+	i = i + 1
+if i < 4 goto L3
+t14 = play(p2) + at(3)
+t15 = t14 + with(i1)
